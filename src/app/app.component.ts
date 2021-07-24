@@ -11,6 +11,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit()
   {
-    console.log("hello");
+    console.log(this._http.get("https://localhost:5001/weatherforecast").subscribe(d=>console.log(d)));
   }
 }
