@@ -13,4 +13,7 @@ export class AppComponent implements OnInit {
   {
     console.log(this._http.get("https://localhost:5001/weatherforecast").subscribe(d=>console.log(d)));
   }
+  postData(){
+  this._http.post("https://localhost:5001/api/Testing/create","hello saif its works well done mashaAllah").subscribe(d=>console.log(d));
+  }
 }
