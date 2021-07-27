@@ -1,4 +1,7 @@
 
 
 
-<button mat-button (click)="postData()">Go</button>
+<button [routerLink]="['/Home']" mat-button (click)="postData()">Go</button>
+<button [routerLink]="['/invoceA']" mat-button routerLinkActive="router-link-active" >Invoice A</button>
+
+<router-outlet></router-outlet>  
