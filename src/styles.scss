@@ -5,9 +5,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 mat-form-field{
     width: 100% !important;
+    font-size: 13px;
+    height: 40px;
 }
 .row{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
 }
