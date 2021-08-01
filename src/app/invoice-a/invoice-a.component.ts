@@ -33,7 +33,7 @@ export class InvoiceAComponent implements OnInit {
     return this.fb.group(
 {
   serial:['',Validators.required],
-  remarks:['',Validators.required],
+  remarks:['Solid 9mm N.P.B bore Pistol',Validators.required],
   price:['',Validators.required],
  }
     
@@ -47,6 +47,7 @@ export class InvoiceAComponent implements OnInit {
   }
   deleteSerial(i:any){
     this.detailArray.removeAt(i);
+  
   }
   submit(){
     console.log(this.InvoiceA_Form.value);
