@@ -47,7 +47,7 @@ export class InvoiceAComponent implements OnInit {
   }
   deleteSerial(i:any){
     this.detailArray.removeAt(i);
-  
+    
   }
   submit(){
     console.log(this.InvoiceA_Form.value);

@@ -11,10 +11,12 @@ export class AppComponent implements OnInit {
 
   ngOnInit()
   {
-    console.log(this._http.get("https://localhost:5001/weatherforecast").subscribe(d=>console.log(d)));
+   // console.log(this._http.get("http://localhost/myproj/WebApi.php",{responseType: 'json'}).subscribe(d=>console.log(d)));
+
+    //console.log(this._http.get("https://localhost:5001/weatherforecast").subscribe(d=>console.log(d)));
   }
   postData(){
     let i = "hello";
-  this._http.post("https://localhost:5001/api/Testing/create/",i).subscribe(d=>console.log(d));
+  //this._http.post("https://localhost:5001/api/Testing/create/",i).subscribe(d=>console.log(d));
   }
 }

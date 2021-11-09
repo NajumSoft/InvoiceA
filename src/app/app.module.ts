@@ -20,12 +20,14 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { InvoiceAComponent } from './invoice-a/invoice-a.component';
+import { ListofInvoicesComponent } from './myComponents/listof-invoices/listof-invoices.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    InvoiceAComponent
+    InvoiceAComponent,
+    ListofInvoicesComponent
   ],
   imports: [
     BrowserModule,

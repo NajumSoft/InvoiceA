@@ -1,12 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+   margin: 0; 
+   font-family: Roboto, "Helvetica Neue", sans-serif; 
+  background-color: #EFEFEF;
+}
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 mat-form-field{
     width: 100% !important;
     font-size: 13px;
     height: 40px;
+    
 }
 .row{
     display: flex;
@@ -29,7 +34,7 @@ mat-form-field{
   
   ::-webkit-scrollbar-thumb {
     background-color: #d6dee1;
-    border-radius: 20px;
+    border-radius: 21px;
     border: 6px solid transparent;
     background-clip: content-box;
   }
