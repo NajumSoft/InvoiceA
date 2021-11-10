@@ -23,7 +23,6 @@ export class AppComponent implements OnInit {
   }
   openDialog() {
     const dialogRef = this.dialog.open(CompanyRegistrationComponent);
-
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });

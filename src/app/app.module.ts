@@ -26,6 +26,8 @@ import { InvoiceAComponent } from './myComponents/invoice-a/invoice-a.component'
 import {MatDialogModule} from '@angular/material/dialog';
 import { LogInComponent } from './myComponents/log-in/log-in.component';
 import { SignUpComponent } from './myComponents/sign-up/sign-up.component';
+
+import { ToastrModule } from 'ngx-toastr';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -58,6 +60,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatDatepickerModule,
     MatNativeDateModule,
     MatDialogModule,
+
+    ToastrModule.forRoot(),
     FontAwesomeModule,
   ],
   providers: [],

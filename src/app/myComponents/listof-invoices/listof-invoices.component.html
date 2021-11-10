@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div class="ListOfRecords">
+            <div class="ListOfRecords animate__animated animate__zoomIn animate__faster ">
                 <div class="row">
                      <div class="col">
                       <div class="input-group mb-3">
@@ -22,9 +22,9 @@
                   </div>
 
                 </div>
-            
-            <table class="table table-borderless table-hover animate__animated animate__fadeInUp animate__faster">
-                <thead>
+            <div class="">
+            <table class="table table-borderless table-hover ">
+                <thead >
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Date</th>
@@ -35,7 +35,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let item of data" class="animate__animated animate__fadeInUp animate__faster">
+                  <tr *ngFor="let item of data" class="animate__animated animate__fadeInUp ">
                     <th >{{item.Id}}</th>
                     <td>{{item.Date}}</td>
                     <td>{{item.CustomerName}}</td>
@@ -45,6 +45,7 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
         </div>
       </div>
     </div>

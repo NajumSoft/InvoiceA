@@ -25,9 +25,11 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@sweetalert2/themes": "^5.0.7",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "bootstrap": "^5.0.2",
+    "ngx-toastr": "^14.1.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"

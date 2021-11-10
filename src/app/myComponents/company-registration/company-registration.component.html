@@ -3,11 +3,11 @@
 
 -->
 
-  <div class="CompanyRegistration-Form">
+  <div class="CompanyRegistration-Form animate__animated animate__zoomIn animate__faster">
     <form>
         <div class="row ">
             <div class="col">
-               <h1>Company Registration</h1>
+               <h1 class="animate__animated animate__fadeInDown ">Company Registration</h1>
             </div>
         </div>
         <br>
@@ -15,19 +15,19 @@
    
 <div class="row  ">
     <div class="d-flex mt-2 mb-2 justify-content-end" >
-        <div class="logoUpload" (click)="ifile.click()">
+        <div class="logoUpload animate__animated animate__fadeInDown " (click)="ifile.click()">
             <img [src]="imageSrc" alt="">
         </div>
         <input #ifile hidden type="file" (change)="onFileChange($event)">
     </div>
 </div>
   <div class="row">
-      <div class="col">
+      <div class="col animate__animated animate__zoomIn ">
         <label>
             <input type="text" placeholder="Company Name"/>
         </label>
       </div>
-      <div class="col">
+      <div class="col animate__animated animate__zoomIn ">
         <label>
             <input type="text" placeholder="Owner Name"/>
         </label>
@@ -35,19 +35,19 @@
   </div>
       <div class="row">
    
-          <div class="col">
+          <div class="col animate__animated animate__zoomIn ">
             <label>
                 <input type="text" placeholder="Mobile Number"/>
               </label>
              </div>
-             <div class="col">
+             <div class="col animate__animated animate__zoomIn ">
                 <label>
                     <input type="text" placeholder="License Number"/>
                   </label>
                  </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col animate__animated animate__zoomIn ">
         <label>
             <input type="text" placeholder="PreFix"/>
         </label>
@@ -55,7 +55,7 @@
   </div>
 
       <div class="row">
-        <div class="col">
+        <div class="col animate__animated animate__zoomIn ">
               <label>
                   <textarea style="height: 150px;" type="text" placeholder="Address"></textarea>
               </label>
@@ -69,7 +69,7 @@
           
       
       <div class="row d-flex justify-content-end">
-          <button class="red" type="button" style="width: 200px;"> Register</button>
+          <button class="red animate__animated animate__fadeInRight animate__faster" type="button" style="width: 200px;"> Register</button>
 
       </div>
 <br>

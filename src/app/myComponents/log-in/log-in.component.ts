@@ -10,6 +10,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./log-in.component.scss']
 })
 export class LogInComponent implements OnInit {
+  
   faCamera = faCamera;
   faGoogle = faGoogle;
   faFacebook = faFacebook;
