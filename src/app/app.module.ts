@@ -19,17 +19,24 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-import { InvoiceAComponent } from './invoice-a/invoice-a.component';
 import { ListofInvoicesComponent } from './myComponents/listof-invoices/listof-invoices.component';
 import { Dashboard01Component } from './myComponents/dashboard01/dashboard01.component';
-
+import { CompanyRegistrationComponent } from './myComponents/company-registration/company-registration.component';
+import { InvoiceAComponent } from './myComponents/invoice-a/invoice-a.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { LogInComponent } from './myComponents/log-in/log-in.component';
+import { SignUpComponent } from './myComponents/sign-up/sign-up.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
     InvoiceAComponent,
     ListofInvoicesComponent,
-    Dashboard01Component
+    Dashboard01Component,
+    CompanyRegistrationComponent,
+    LogInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +57,8 @@ import { Dashboard01Component } from './myComponents/dashboard01/dashboard01.com
     MatProgressBarModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatDialogModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

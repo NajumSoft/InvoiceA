@@ -4,5 +4,7 @@
 <button [routerLink]="['/dashboard']" mat-button (click)="postData()">Dashboard</button>
 <button [routerLink]="['/invoceA']" mat-button routerLinkActive="router-link-active" >Invoice A</button>
 <button [routerLink]="['/listofinvoices']" mat-button routerLinkActive="router-link-active" >List of Invoices</button>
+<button mat-button routerLinkActive="router-link-active" (click)="openDialog()">Company Register </button>
+
 
 <router-outlet></router-outlet>  
