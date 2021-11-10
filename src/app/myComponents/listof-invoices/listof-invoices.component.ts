@@ -9,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class ListofInvoicesComponent implements OnInit {
 
   constructor(private _http:HttpClient) { }
-
+  data : any[] = [];
   ngOnInit(): void {
-    console.log(this._http.get("http://localhost/myproj/WebApi.php",{responseType: 'json'}).subscribe(d=>console.log(d)));
+ this._http.get("http://localhost/myproj/WebApi.php",{responseType: 'json'}).subscribe(d=>{
+    this.data = Object.assign(d);
+    console.log(this.data);
+  });
+ 
   }
 
 }

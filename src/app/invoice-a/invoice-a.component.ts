@@ -22,7 +22,8 @@ export class InvoiceAComponent implements OnInit {
        address:['',Validators.required],
        note:['',Validators.required],
        invoiceDetail: this.fb.array([this.makeSerial()]),
-     })
+     });
+      
   }
 
   get detailArray() {

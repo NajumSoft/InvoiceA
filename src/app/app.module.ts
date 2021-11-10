@@ -21,13 +21,15 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { InvoiceAComponent } from './invoice-a/invoice-a.component';
 import { ListofInvoicesComponent } from './myComponents/listof-invoices/listof-invoices.component';
+import { Dashboard01Component } from './myComponents/dashboard01/dashboard01.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InvoiceAComponent,
-    ListofInvoicesComponent
+    ListofInvoicesComponent,
+    Dashboard01Component
   ],
   imports: [
     BrowserModule,
