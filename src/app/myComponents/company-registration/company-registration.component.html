@@ -1,0 +1,95 @@
+<!-- <p >company-registration works!</p>
+<button [mat-dialog-close]="data">close</button>
+
+-->
+
+  <div class="CompanyRegistration-Form">
+    <form>
+        <div class="row ">
+            <div class="col">
+               <h1>Company Registration</h1>
+            </div>
+        </div>
+        <br>
+        <br>
+   
+<div class="row  ">
+    <div class="d-flex mt-2 mb-2 justify-content-end" >
+        <div class="logoUpload" (click)="ifile.click()">
+            <img [src]="imageSrc" alt="">
+        </div>
+        <input #ifile hidden type="file" (change)="onFileChange($event)">
+    </div>
+</div>
+  <div class="row">
+      <div class="col">
+        <label>
+            <input type="text" placeholder="Company Name"/>
+        </label>
+      </div>
+      <div class="col">
+        <label>
+            <input type="text" placeholder="Owner Name"/>
+        </label>
+      </div>
+  </div>
+      <div class="row">
+   
+          <div class="col">
+            <label>
+                <input type="text" placeholder="Mobile Number"/>
+              </label>
+             </div>
+             <div class="col">
+                <label>
+                    <input type="text" placeholder="License Number"/>
+                  </label>
+                 </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        <label>
+            <input type="text" placeholder="PreFix"/>
+        </label>
+        </div>
+  </div>
+
+      <div class="row">
+        <div class="col">
+              <label>
+                  <textarea style="height: 150px;" type="text" placeholder="Address"></textarea>
+              </label>
+         </div>
+      </div>
+   
+
+ 
+
+        
+          
+      
+      <div class="row d-flex justify-content-end">
+          <button class="red" type="button" style="width: 200px;"> Register</button>
+
+      </div>
+<br>
+<br>
+        <p>if you have already account? <span [routerLink]="['/logIn']">LogIn</span> now!</p>
+        <!-- <div class="segment">
+          <button class="unit" type="button"><i class="icon ion-md-arrow-back"></i></button>
+          <button class="unit" type="button"><i class="icon ion-md-bookmark"></i></button>
+          <button class="unit" type="button"><i class="icon ion-md-settings"></i></button>
+        </div> -->
+        
+
+        
+      </form>
+</div>
+
+
+
+
+
+
+
+

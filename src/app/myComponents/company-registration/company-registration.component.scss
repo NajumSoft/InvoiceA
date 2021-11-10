@@ -1,0 +1,172 @@
+$ruler: 16px;
+$color-red: #AE1100;
+$color-bg: #EBECF0;
+$color-shadow: #BABECC;
+$color-white: #FFF;
+
+h1{
+    font-size: 30px;
+    font-weight: 400;
+    color: #6d7587;
+}
+
+body, p, input, select, textarea, button {
+    font-family: 'open sans', sans-serif;
+    letter-spacing: -0.2px;
+    font-size: $ruler;
+}
+
+div, p {
+  color: $color-shadow;
+  text-shadow: 1px 1px 1px $color-white;
+}
+
+.CompanyRegistration-Form{
+   // border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebecf0;
+   
+    padding: 10px;
+}
+form {
+   // border: 1px solid blue;
+  padding: $ruler;
+ width: 600px;
+  margin: 0 auto;
+}
+
+.segment {
+  padding: $ruler*2 0;
+  text-align: center;
+}
+
+button, input, textarea {
+  border: 0;
+  outline: 0;
+  font-size: $ruler;
+  border-radius: $ruler*20;
+  padding: $ruler;
+  background-color:$color-bg;
+  text-shadow: 1px 1px 0 $color-white;
+}
+
+label {
+  display: block;
+  margin-bottom: $ruler*1.5;
+  width: 100%;
+}
+
+input ,textarea {
+  margin-right: $ruler/2;
+  box-shadow:  inset 2px 2px 5px $color-shadow, inset -5px -5px 10px $color-white;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+
+  &:focus {
+    box-shadow:  inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+  }
+}
+
+button {
+  color:#61677C;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px $color-white,  5px 5px 20px $color-shadow;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  
+  
+  &:hover {
+    box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+  }
+  
+  &:active {
+    box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+  }
+  
+  
+  
+  &.unit {
+    border-radius: $ruler/2;
+    line-height: 0;
+    width: $ruler*3;
+    height: $ruler*3;
+    display:inline-flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0 $ruler/2;
+    font-size: $ruler*1.2;
+    
+
+  }
+  
+  &.red {
+    display: block;
+    width: 100%;
+    color:$color-red;
+  }
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  label {
+    margin: 0;
+    flex: 1;
+  }
+
+}
+p{
+    font-size: 14px;
+}
+span{
+	color: #6d7587;
+    cursor: pointer;
+   font-weight: 600;
+}
+.logoUpload{
+    outline: none;
+    box-shadow: none;
+    width: 100px;
+    height: 100px;
+    content: 'Logo';
+    box-shadow: -5px -5px 20px $color-white,  5px 5px 20px $color-shadow;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 5px;
+   // border: 1px solid blue;
+}
+.logoUpload:hover{
+    cursor: pointer;
+
+}
+// .logoUpload:after{
+//     content: 'Logo';
+//     font-family: open sans;
+//     font-size: 20px;
+//     position: absolute;
+//     text-align: center !important;
+//     line-height: 100px;
+//    // border: 1px solid blue;
+//     width: 100px;
+
+// }
+.logoUpload img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+}
+textarea {
+    height: 120px !important;
+    border-radius: 25px;
+}

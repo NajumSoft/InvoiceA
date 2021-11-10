@@ -1,0 +1,30 @@
+<div class="logIn-Form">
+    <form>
+  
+        <div class="segment">
+          <h1>Sign In</h1>
+        </div>
+        
+        <label>
+          <input type="text" placeholder="Email Address"/>
+        </label>
+        <label>
+          <input type="password" placeholder="Password"/>
+        </label>
+        <button class="red" type="button"> Log in</button>
+<br>
+<br>
+        <p>if you have not account yet? <span [routerLink]="['/signUp']">Register</span> now!</p>
+        <br>
+        
+        <div class="segment">
+          <button class="unit" type="button"><fa-icon color='red' [icon]="faGoogle"></fa-icon></button>
+          <button class="unit" type="button"><fa-icon color='facebook'[icon]="faFacebook"></fa-icon></button>
+          <button class="unit" type="button"><fa-icon [icon]="faTwitter"></fa-icon></button>
+        </div>
+        
+     
+
+        
+      </form>
+</div>

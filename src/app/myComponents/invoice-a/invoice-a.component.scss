@@ -1,0 +1,109 @@
+.inoiceA{
+    border: 2px solid rgb(228, 228, 228);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px !important;
+    margin: 20px auto;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: white;
+    transition: all .3s;
+    border: 1px solid #e1e1e1;
+}
+.inoiceA:hover{
+    
+    box-shadow: -10px -10px 15px #e1e1e1;
+   
+
+}
+.invoiceA-detail::before{
+    content: "Invoice Details";
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    height: 25px;
+    position: absolute;
+    margin-top: -27px;
+    margin-left: 10px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-family: open sans !important;
+    font-weight: 700;
+    color: rgb(175, 175, 175);
+   }
+.invoiceA-detail{
+ border: 2px dashed rgb(192, 192, 192);
+ border-radius: 10px;
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ overflow-y: hidden;
+ overflow-x: hidden;
+ box-sizing: border-box;
+ min-height: 200px;
+}
+.detail-top{
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    height: 30px;
+    border-radius: 12.5px;
+    margin-left: 1px;
+    margin-top: 5px;
+}
+.detail-content{
+   
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.detail-footer{
+    background-color:  rgb(230, 230, 230);
+    width: 100%;
+    height: 30px;
+    border-radius: 12.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center !important;
+}
+.actionArea{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: end;
+}
+#deleteButton{
+    color: rgb(206, 20, 20);
+    cursor: pointer;
+    transition: all .3s;
+}
+#deleteButton:hover{
+transform: scale(1.1);
+color: rgb(247, 12, 12);
+}
+
+#addSerial{
+    color: rgb(11, 105, 34);
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+
+  
+}
+#addSerial:hover{
+color: rgb(5, 33, 126);
+transform: scale(1.1);
+
+}
+
+#logo{
+    width: 80px;
+
+}
