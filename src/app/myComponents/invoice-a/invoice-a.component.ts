@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-invoice-a',
@@ -10,7 +12,7 @@ export class InvoiceAComponent implements OnInit {
 
   InvoiceA_Form:FormGroup = new FormGroup({});
   invoiceDetail:FormArray =  new FormArray([]);
-  constructor(private fb:FormBuilder) { }
+  constructor(private fb:FormBuilder,private _http:HttpClient,private router:Router ) { }
 
   ngOnInit(): void {
      this.InvoiceA_Form = this.fb.group({
@@ -51,6 +53,13 @@ export class InvoiceAComponent implements OnInit {
     
   }
   submit(){
-    console.log(this.InvoiceA_Form.value);
+    // console.log(this.InvoiceA_Form.value);
+    this._http.post('http://localhost/myproj/WebApi.php',this.InvoiceA_Form.value).subscribe(d => {
+      this.router.navigate(['/listofinvoices']);
+    },error => {
+      console.log(error.error.text);
+
+    },);
+
   }
 }
