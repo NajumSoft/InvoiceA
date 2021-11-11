@@ -12,6 +12,7 @@ import { SignUpComponent } from './myComponents/sign-up/sign-up.component';
 const routes: Routes = [
   {path:"dashboard",component:Dashboard01Component},
   {path:"invoceA",component:InvoiceAComponent},
+  {path:"invoceA/:id",component:InvoiceAComponent},
   {path:"listofinvoices",component:ListofInvoicesComponent},
   {path:"companyRegistration",component:CompanyRegistrationComponent},
   {path:"logIn",component:LogInComponent},
