@@ -3,8 +3,9 @@
 
 
   <div class="inoiceA animate__animated animate__zoomIn animate__faster ">
-    <div class="row ">
-      <div class="col-md-4 animate__fadeInDown animate__animated "><h1>Create Invoice</h1></div>
+    
+    <div class="row">
+      <div class="col-md-4 "><h1>{{InvoiceType}}</h1></div>
       <div class="col-md-4"></div>
       <div class="col-md-2"></div>
       <div class="col-md-2">
@@ -13,14 +14,14 @@
     
     </div>
     <br>
-    <div class="row">
+    <div class="row animate__fadeInDown animate__animated ">
       <div class="col-md-3">Invoice #: [ <span>3350</span> ]</div>
       <div class="col-md-3"></div>
       <div class="col-md-3"></div>
       <div class="col-md-3">
         <mat-form-field appearance="legacy">
           <mat-label>Choose a date</mat-label>
-          <input matInput [matDatepicker]="picker" formControlName="date">
+          <input matInput [matDatepicker]="picker" formControlName="date" class="">
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
@@ -29,7 +30,7 @@
     <br>
     <br>
     
-      <div class="row">
+      <div class="row animate__fadeInDown animate__animated ">
           <div class="col-md-3">
             <mat-form-field appearance="legacy">
                 <mat-label>Customer Name</mat-label>
@@ -57,7 +58,7 @@
     
       </div>
     
-      <div class="row">
+      <div class="row animate__fadeInDown animate__animated ">
         <div class="col-md-6">
           <mat-form-field class="example-full-width" appearance="legacy">
             <mat-label>Address</mat-label>
@@ -78,13 +79,13 @@
   
       <!-- ----------  Detail Area  ---------- -->
   
-  <div class="invoiceA-detail mt-5">
+  <div class="invoiceA-detail mt-5 animate__animated animate__zoomIn animate__faster">
     <div class="row detail-top"></div>
     
   <div class="detail-content ">
     <div formArrayName="invoiceDetail" *ngFor="let de of detailArray.controls; let i = index" >
   
-      <div class="row animate__animated animate__fadeInUp animate__faster"[formGroupName]="i" >
+      <div class="row animate__animated animate__fadeInUp "[formGroupName]="i" >
         <div class="col-md-2 ">
           <mat-form-field appearance="legacy">
             <mat-label>Serial</mat-label>
@@ -127,7 +128,7 @@
   <div class="actionArea">
     <div class="row">
       <div class="col-md-12">
-        <button mat-raised-button color="primary" (click)="submit()">Create</button>
+        <button mat-raised-button color="primary" (click)="submit()">{{BtnText}}</button>
       </div>
     </div>
   </div>

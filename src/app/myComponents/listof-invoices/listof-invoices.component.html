@@ -42,6 +42,8 @@
                     <td>{{item.FatherName}}</td>
                     <td>{{item.MobileNumber}}</td>
                     <td>{{item.LisenceNumber}}</td>
+                    <td><fa-icon [icon]="faEdit" (click)="edit(item)" style="cursor: pointer;color:rgb(238, 167, 0); font-size: 20px;"></fa-icon> </td>
+                    <td><fa-icon [icon]="faTrashAlt" (click)="delete(item.Id)" style="cursor: pointer;color:red; font-size: 20px;"></fa-icon> </td>
                   </tr>
                 </tbody>
               </table>
