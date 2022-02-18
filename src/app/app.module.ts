@@ -29,6 +29,7 @@ import { SignUpComponent } from './myComponents/sign-up/sign-up.component';
 
 import { ToastrModule } from 'ngx-toastr';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FLandingPageOneComponent } from './myComponents/f-landing-page-one/f-landing-page-one.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     Dashboard01Component,
     CompanyRegistrationComponent,
     LogInComponent,
-    SignUpComponent
+    SignUpComponent,
+    FLandingPageOneComponent
   ],
   imports: [
     BrowserModule,

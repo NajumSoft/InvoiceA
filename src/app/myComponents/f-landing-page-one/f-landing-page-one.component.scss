@@ -1,0 +1,135 @@
+.v_1_ad{
+    margin-left: 10px;
+    margin-right: 10px;
+    // border: 1px solid blue;
+    width: 100px;
+    height: 140px;
+    padding: 7px;
+     //border-radius: 15px;
+   -webkit-transition: all  .2s ease-in-out;
+    background-color: #ffffff;
+
+
+}
+.v_1_ad:hover{
+    cursor: pointer;
+    border-radius: 15px ;
+    -webkit-transform: scale(1.1);
+    
+    box-shadow: 3px 3px 8px #e1e1e1;
+   
+}
+.v_1_ad:active{
+    box-shadow: inset 1px 1px 5px #e1e1e1;
+    -webkit-transform: scale(1.0);
+}
+.v_1_ad_logo{
+    
+     //border: 3px solid green;
+    display: flex;
+    justify-content: center;
+}
+.v_1_ad img{
+    width: 80%;
+}
+.v_1_ad_details{
+ //border: 1px solid blue;
+ margin-top: 5px;
+
+}
+.v_1_ad_details h1{
+    font-size: 14px;
+    font-family: open sans;
+    text-transform: capitalize;
+    letter-spacing: .05mm;
+    font-weight: 600;
+     //border: 1px solid blue;
+    line-height: 18px;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: rgb(14, 40, 58);
+    
+}
+.v_1_ad_details p{
+    font-size: 10px;
+    font-family: open sans;
+    text-transform: capitalize;
+    letter-spacing: .1mm;
+    font-weight: 400;
+     //border: 1px solid blue;
+    line-height: 11px;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: rgb(14, 40, 58);
+}
+.v_1_ad_details span{
+    font-size: 10px;
+    font-family: open sans;
+    text-transform: capitalize;
+    letter-spacing: .1mm;
+    font-weight: 400;
+     //border: 1px solid blue;
+    line-height: 11px;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: rgb(134, 11, 93);
+    float: right;
+}
+
+
+.mainLandingPage{
+    background: white;
+}
+.navBar{
+width: 600px;
+
+}
+.searchBar{
+    border: 2px solid #e1e1e1;
+padding-top: 8px;
+padding-bottom: 5px;
+padding-left: 10px;
+padding-right: 10px;
+    background-color: white;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 18px;
+    border-color: rgb(10, 128, 196);
+}
+
+.searchBar input{
+    border: none;
+    outline: none;
+
+}
+.searchBar:active{
+    border-color: rgb(10, 128, 196);
+}
+.searchBar select {
+    border: none;
+    outline: none;
+    width: 100px;
+    font-size: 15px;
+    color: #666;
+    border-left: 1px  solid #e1e1e1;
+}
+.topQuickMenu{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 40px;
+    border-bottom: 1px solid #e1e1e1;
+    line-height: 40px;
+    font-size: 15px;
+ 
+}
+.topQuickMenu div{
+    margin-left: 5px;
+    margin-right: 5px;
+   // border-left: 1px solid #e1e1e1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.topQuickMenu div:hover{
+    cursor: pointer;
+    color: rgb(226, 102, 19);
+}
