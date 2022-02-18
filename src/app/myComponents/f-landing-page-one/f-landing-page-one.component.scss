@@ -85,21 +85,22 @@ width: 600px;
 
 }
 .searchBar{
-    border: 2px solid #e1e1e1;
-padding-top: 8px;
-padding-bottom: 5px;
-padding-left: 10px;
-padding-right: 10px;
+    border: 2px solid  rgb(10, 128, 196);
     background-color: white;
     border-radius: 25px;
     height: 50px;
     font-size: 18px;
-    border-color: rgb(10, 128, 196);
+
 }
 
 .searchBar input{
     border: none;
     outline: none;
+   // border: 1px solid blue;
+    width: 100%;
+    border-radius: 25px;
+    line-height: 42px;
+    text-align: center;
 
 }
 .searchBar:active{
@@ -132,4 +133,31 @@ padding-right: 10px;
 .topQuickMenu div:hover{
     cursor: pointer;
     color: rgb(226, 102, 19);
+}
+
+
+.catogoriesMenu{
+    background-color: white;
+    box-shadow: 3px 3px 10px #e1e1e1;
+ //   border-radius: 20px;
+  width: 250px;
+    color: rgb(28, 88, 112);
+}
+.catogoriesMenu ul{
+  padding: 0 !important;
+}
+.catogoriesMenu ul li{
+    padding-left: 15px !important;
+  //  border: 1px solid pink;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    list-style: none;
+    border-bottom: 1px solid #e1e1e1;
+    
+}
+.catogoriesMenu ul li:hover{
+background-color: #f7f2f2;
+cursor: pointer;
+    
 }
