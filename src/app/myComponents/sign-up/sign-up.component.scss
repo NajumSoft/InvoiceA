@@ -19,7 +19,11 @@ div, p {
   color: $color-shadow;
   text-shadow: 1px 1px 1px $color-white;
 }
-
+.page{
+  width: 100%;
+  height: 100%;
+  background-color: #ebecf0;
+}
 .SignUp-Form{
    // border: 1px solid black;
     width: 100%;
